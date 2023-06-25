@@ -105,3 +105,7 @@ button_divide.grid(row=6, column=2)
 
 # 运行主循环
 root.mainloop()
+
+#dwadawdadawd
+#dwadwadadwa
+#dwaafwadadawd
