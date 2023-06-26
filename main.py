@@ -20,7 +20,7 @@ def button_subtract():
     first_number = entry.get()
     global f_num
     global math_operation
-    math_operation = "subtraction"
+    math_operation = "subtraction" #减法
     f_num = float(first_number)
     entry.delete(0, tk.END)
 
@@ -28,7 +28,7 @@ def button_multiply():
     first_number = entry.get()
     global f_num
     global math_operation
-    math_operation = "multiplication"
+    math_operation = "multiplication" #乘法
     f_num = float(first_number)
     entry.delete(0, tk.END)
 
@@ -36,11 +36,11 @@ def button_divide():
     first_number = entry.get()
     global f_num
     global math_operation
-    math_operation = "division"
+    math_operation = "division" #除法
     f_num = float(first_number)
     entry.delete(0, tk.END)
 
-def button_equal():
+def button_equal():                 #等号函数
     second_number = entry.get()
     entry.delete(0, tk.END)
     if math_operation == "addition":
@@ -78,7 +78,7 @@ button_multiply = tk.Button(root, text="*", padx=39, pady=20, command=button_mul
 button_divide = tk.Button(root, text="/", padx=39, pady=20, command=button_divide)
 
 button_equal = tk.Button(root, text="=", padx=86, pady=20, command=button_equal)
-button_clear = tk.Button(root, text="Clear", padx=77, pady=20, command=button_clear)
+button_clear = tk.Button(root, text="清除", padx=77, pady=20, command=button_clear)
 
 # 将按钮放置到网格中
 button_1.grid(row=3, column=0)
@@ -94,7 +94,7 @@ button_8.grid(row=1, column=1)
 button_9.grid(row=1, column=2)
 
 button_0.grid(row=4, column=0)
-button_clear.grid(row=4, column=1, columnspan=2)
+button_clear.grid(row=4, column=1, columnspan=2) #将清除按钮放置在第四行第二列，并占据两个列的宽度。
 
 button_add.grid(row=5, column=0)
 button_equal.grid(row=5, column=1, columnspan=2)
