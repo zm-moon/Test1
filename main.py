@@ -3,17 +3,17 @@ import tkinter as tk
 def button_click(number):
     current = entry.get()
     entry.delete(0, tk.END)
-    entry.insert(tk.END, current + str(number))
+    entry.insert(tk.END, current + str(number)) #输入框配置
 
 def button_clear():
-    entry.delete(0, tk.END)
+    entry.delete(0, tk.END) #清除按钮
 
 def button_add():
-    first_number = entry.get()
+    first_number = entry.get() #获取第一次输入的值
     global f_num
     global math_operation
     math_operation = "addition"
-    f_num = float(first_number)
+    f_num = float(first_number) #转换成浮点数后赋值
     entry.delete(0, tk.END)
 
 def button_subtract():
@@ -106,6 +106,3 @@ button_divide.grid(row=6, column=2)
 # 运行主循环
 root.mainloop()
 
-#dwadawdadawd
-#dwadwadadwa
-#dwaafwadadawd
